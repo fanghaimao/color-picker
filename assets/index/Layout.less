@@ -1,0 +1,68 @@
+@prefixClassName: ~'@{prefixClass}-panel';
+
+.@{prefixClassName}-inner {
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  // border: 1px solid #ccc;
+  padding: 16px 8px 24px 8px;
+  .close_panel{
+    transition: all 0.3 ;
+    &:hover{
+      svg{
+        path{
+          transition: all 0.3 ;
+          fill: #414751 !important
+        }
+      }
+    }
+  }
+  .straw {
+    &:hover {
+      svg path {
+        fill: #BEC0C8 !important;
+      }
+    }
+  }
+  
+  .collect {
+    &:hover {
+      svg path {
+        fill: #BEC0C8 !important;
+      }
+    }
+  }
+}
+
+.@{prefixClassName}-wrap{
+  margin: 16px 0 0;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  &-preview{
+    // position: absolute;
+    // right: 8px;
+    padding-left: 8px;
+  }
+  &-ribbon{
+    position: absolute;
+    left: 8px;
+    top: 0;
+    right: 43px;
+    height: 40px;
+  }
+  &-alpha{
+    position: absolute;
+    left: 8px;
+    right: 43px;
+    bottom: 0;
+    height: (40px - 8px) / 2;
+  }
+
+
+}
+.@{prefixClassName}-wrap-has-alpha {
+  .@{prefixClassName}-wrap-ribbon {
+    height: (40px - 8px) / 2;
+  }
+}
